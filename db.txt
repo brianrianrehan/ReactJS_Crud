@@ -6,11 +6,11 @@ CREATE DATABASE ujian_crud;
 USE ujian_crud;
 
 CREATE TABLE mahasiswa(
-	 id int primary key auto_increment,
+    id int primary key auto_increment,
     npm varchar(8),
     nama varchar(255),
     kelas varchar(6),
-	 kuis int,
+    kuis int,
     uts int,
     uas int,
     createdAt date,
