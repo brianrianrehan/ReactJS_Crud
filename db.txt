@@ -1,0 +1,22 @@
+cd c:\xampp\mysql\bin
+mysql.exe -u root
+
+CREATE DATABASE ujian_crud;
+
+USE ujian_crud;
+
+CREATE TABLE mahasiswa(
+	 id int primary key auto_increment,
+    npm varchar(8),
+    nama varchar(255),
+    kelas varchar(6),
+	 kuis int,
+    uts int,
+    uas int,
+    createdAt date,
+    updatedAt date
+);	
+
+insert into mahasiswa values (1, '50420296','BRIAN RIAN REHAN','3IA12','10','10','10',now(),now());
+
+select * from mahasiswa;
